@@ -9,7 +9,7 @@
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
         <version>3.2.0</version>
-        <relativePath/> <!-- lookup parent from repository -->
+        <relativePath/>
     </parent>
 
     <groupId>com.example</groupId>
@@ -39,6 +39,14 @@
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
+        <!-- MySQL JDBC Driver -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version>
+            <scope>runtime</scope>
+        </dependency>
+
         <!-- JWT (jjwt modular) -->
         <dependency>
             <groupId>io.jsonwebtoken</groupId>
@@ -58,7 +66,7 @@
             <scope>runtime</scope>
         </dependency>
 
-        <!-- H2 Database -->
+        <!-- H2 Database (pour tests ou profil dev) -->
         <dependency>
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
@@ -72,7 +80,7 @@
             <version>2.1.0</version>
         </dependency>
 
-        <!-- Lombok (updated) -->
+        <!-- Lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
